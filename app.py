@@ -10,7 +10,7 @@ def home():
 @app.route("/result")
 def result():
     try:
-        output = subprocess.check_output( [r"venv\Scripts\python.exe", "opt2.py"], text=True, encoding="utf-8", errors="replace")
+        output = subprocess.check_output( ["python", "opt2.py"], text=True, encoding="utf-8", errors="replace")
         return render_template("result.html", result=output)
     except Exception as e:
         return render_template("result.html", result=f"❌ Error: {str(e)}")
