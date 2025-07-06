@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your KTU Grades</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f4f4;
+      padding: 40px;
+    }
+
+    .result-container {
+      background: #fff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+      white-space: pre-wrap;
+      font-family: monospace;
+      max-width: 1000px;
+      margin: auto;
+      overflow-x: auto;
+    }
+
+    h2 {
+      text-align: center;
+      color: #1e3c72;
+    }
+  </style>
+</head>
+<body>
+  <h2>📘 Semester Grades</h2>
+  <div class="result-container">
+    {{ result }}
+  </div>
+</body>
+</html>
+
